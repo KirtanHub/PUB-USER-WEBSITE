@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="PUB WEB USER — a simple directory to discover official Indian government services.">
+  <title>PUB WEB USER — Public Services, Made Simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span class="live-dot"></span>
+    <span data-en="A simpler way to reach public services" data-hi="सरकारी सेवाओं तक पहुँचने का आसान तरीका">A simpler way to reach public services</span>
+    <span class="announce-tag">INDIA • नागरिक सेवा</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="PUB WEB USER home">
+      <span class="brand-mark">P<span>W</span></span>
+      <span class="brand-name">PUB WEB <b>USER</b><small data-en="PUBLIC SERVICE DIRECTORY" data-hi="सार्वजनिक सेवा निर्देशिका">PUBLIC SERVICE DIRECTORY</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#services" data-en="Explore services" data-hi="सेवाएँ देखें">Explore services</a>
+      <a href="#how" data-en="How it works" data-hi="कैसे काम करता है">How it works</a>
+      <a href="#emergency" data-en="Emergency" data-hi="आपातकालीन">Emergency</a>
+    </nav>
+    <div class="header-actions">
+      <button class="utility-btn" id="languageToggle" type="button" aria-label="Change language"><span>文</span><b>हिंदी</b></button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode"><span id="themeIcon">☾</span></button>
+      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-icon">✦</span><span data-en="YOUR EVERYDAY GOVERNMENT GUIDE" data-hi="आपकी रोज़मर्रा की सरकारी सेवा गाइड">YOUR EVERYDAY GOVERNMENT GUIDE</span></div>
+        <h1 data-en-html="Government services.<br><em>One simple place.</em>" data-hi-html="सरकारी सेवाएँ।<br><em>एक आसान जगह।</em>">Government services.<br><em>One simple place.</em></h1>
+        <p data-en="Find the right official website for documents, jobs, education, transport and more — without the confusion." data-hi="दस्तावेज़, नौकरी, शिक्षा, परिवहन और अन्य सेवाओं की सही आधिकारिक वेबसाइट आसानी से खोजें।">Find the right official website for documents, jobs, education, transport and more — without the confusion.</p>
+        <form class="search-box" id="searchForm" role="search">
+          <span class="search-symbol">⌕</span>
+          <input id="searchInput" type="search" autocomplete="off" placeholder="What do you need help with? e.g. Aadhaar, passport, jobs..." aria-label="Search government services">
+          <button type="submit" data-en="Search" data-hi="खोजें">Search <span>→</span></button>
+        </form>
+        <div class="popular-searches"><span data-en="Popular:" data-hi="लोकप्रिय:">Popular:</span>
+          <button class="chip" data-search="Aadhaar">Aadhaar</button><button class="chip" data-search="Passport">Passport</button><button class="chip" data-search="Jobs">Jobs</button><button class="chip" data-search="Scholarship">Scholarship</button>
+        </div>
+        <div class="hero-trust"><span>✓</span><span data-en="Links to official portals · Free to explore · No sign-up here" data-hi="आधिकारिक पोर्टल के लिंक · देखने के लिए मुफ़्त · यहाँ साइन-अप नहीं">Links to official portals · Free to explore · No sign-up here</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-glow"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="float-card card-passport"><span class="mini-icon purple">▣</span><div><b>Passport Seva</b><small>Travel & identity</small></div><span class="tiny-arrow">↗</span></div>
+        <div class="float-card card-aadhaar"><span class="mini-icon orange">▤</span><div><b>Aadhaar</b><small>Identity services</small></div><span class="tiny-arrow">↗</span></div>
+        <div class="float-card card-jobs"><span class="mini-icon green">⌁</span><div><b>Find a job</b><small>Career opportunities</small></div><span class="tiny-arrow">↗</span></div>
+        <div class="center-emblem"><div class="emblem-inner"><span>🇮🇳</span><b>सेवा</b><small>FOR EVERYONE</small></div></div>
+        <div class="art-caption">PUBLIC SERVICES <span>•</span> MADE ACCESSIBLE</div>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div><b>01</b><span data-en="Search by your need" data-hi="अपनी ज़रूरत से खोजें">Search by your need</span></div>
+      <div><b>02</b><span data-en="Choose a service" data-hi="सेवा चुनें">Choose a service</span></div>
+      <div><b>03</b><span data-en="Continue on official site" data-hi="आधिकारिक साइट पर जाएँ">Continue on official site</span></div>
+    </section>
+
+    <section class="services-section section-wrap" id="services">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-icon">✳</span><span data-en="SERVICE DIRECTORY" data-hi="सेवा निर्देशिका">SERVICE DIRECTORY</span></div>
+          <h2 data-en="What can we help you find?" data-hi="आप क्या खोजना चाहते हैं?">What can we help you <em>find?</em></h2>
+          <p data-en="Explore trusted starting points for common public services." data-hi="आम नागरिक सेवाओं के लिए भरोसेमंद आधिकारिक वेबसाइटें देखें।">Explore trusted starting points for common public services.</p></div>
+        <div class="result-count" id="resultCount">45 SERVICES <span>AVAILABLE</span></div>
+      </div>
+      <div class="filter-row" id="filterRow" aria-label="Filter services">
+        <button class="filter-btn active" data-category="all" data-en="All services" data-hi="सभी सेवाएँ">All services</button>
+        <button class="filter-btn" data-category="identity" data-en="Identity & documents" data-hi="पहचान और दस्तावेज़">Identity & documents</button>
+        <button class="filter-btn" data-category="jobs" data-en="Jobs & career" data-hi="नौकरी और करियर">Jobs & career</button>
+        <button class="filter-btn" data-category="education" data-en="Education" data-hi="शिक्षा">Education</button>
+        <button class="filter-btn" data-category="finance" data-en="Finance & schemes" data-hi="वित्त और योजनाएँ">Finance & schemes</button>
+        <button class="filter-btn" data-category="transport" data-en="Transport" data-hi="परिवहन">Transport</button>
+        <button class="filter-btn" data-category="citizen" data-en="Citizen help" data-hi="नागरिक सहायता">Citizen help</button>
+      </div>
+      <div class="service-grid" id="serviceGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3 data-en="No matching services" data-hi="कोई मिलती-जुलती सेवा नहीं मिली">No matching services</h3><p data-en="Try another keyword or choose a different category." data-hi="कोई दूसरा शब्द लिखें या दूसरी श्रेणी चुनें।">Try another keyword or choose a different category.</p><button id="clearSearch" class="text-button" data-en="Clear search" data-hi="खोज हटाएँ">Clear search</button></div>
+      <div class="directory-note"><span>ⓘ</span><p data-en="PUB WEB USER is an independent directory, not a government website. Applications, fees and eligibility are handled only by the linked departments." data-hi="PUB WEB USER एक स्वतंत्र निर्देशिका है, सरकारी वेबसाइट नहीं। आवेदन, शुल्क और पात्रता संबंधित सरकारी विभाग तय करते हैं।">PUB WEB USER is an independent directory, not a government website. Applications, fees and eligibility are handled only by the linked departments.</p></div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="section-wrap how-inner">
+        <div class="how-copy"><div class="eyebrow"><span class="eyebrow-icon">✦</span><span data-en="SIMPLE BY DESIGN" data-hi="आसान इस्तेमाल के लिए">SIMPLE BY DESIGN</span></div>
+          <h2 data-en="Less searching . More doing." data-hi="कम खोजें।<br><em>काम जल्दी करें।</em>">Less searching.<br><em>More doing.</em></h2>
+          <p data-en="We bring useful starting links together so you can spend less time figuring out where to go." data-hi="हम उपयोगी आधिकारिक लिंक एक जगह रखते हैं ताकि आपको सही वेबसाइट ढूँढने में कम समय लगे।">We bring useful starting links together so you can spend less time figuring out where to go.</p>
+          <a class="outline-link" href="#services" data-en="Explore all services ↗" data-hi="सभी सेवाएँ देखें ↗">Explore all services ↗</a>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-no">01</span><div><h3 data-en="Tell us what you need" data-hi="अपनी ज़रूरत खोजें">Tell us what you need</h3><p data-en="Use the search bar or browse by category." data-hi="सर्च बार या श्रेणी का उपयोग करें।">Use the search bar or browse by category.</p></div><span class="step-icon">⌕</span></article>
+          <article class="step"><span class="step-no">02</span><div><h3 data-en="Pick the right portal" data-hi="सही पोर्टल चुनें">Pick the right portal</h3><p data-en="Read the short description before opening a service." data-hi="सेवा खोलने से पहले उसका विवरण पढ़ें।">Read the short description before opening a service.</p></div><span class="step-icon">▣</span></article>
+          <article class="step"><span class="step-no">03</span><div><h3 data-en="Apply securely there" data-hi="वहाँ सुरक्षित आवेदन करें">Apply securely there</h3><p data-en="Complete your task on the department's official website." data-hi="अपना काम संबंधित विभाग की आधिकारिक वेबसाइट पर पूरा करें।">Complete your task on the department's official website.</p></div><span class="step-icon">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-section section-wrap">
+      <div class="safety-icon">⌑</div><div><b data-en="A quick safety reminder" data-hi="सुरक्षा के लिए एक ज़रूरी बात">A quick safety reminder</b><p data-en="Check the website address before sharing personal details. PUB WEB USER never asks for your Aadhaar number, OTP, password or payment." data-hi="अपनी जानकारी देने से पहले वेबसाइट का पता जाँचें। PUB WEB USER आपका आधार नंबर, OTP, पासवर्ड या भुगतान नहीं माँगता।">Check the website address before sharing personal details. PUB WEB USER never asks for your Aadhaar number, OTP, password or payment.</p></div><span class="safety-check">✓</span>
+    </section>
+
+    <section class="emergency-section" id="emergency">
+      <div class="section-wrap">
+        <div class="emergency-heading"><div><div class="eyebrow"><span class="eyebrow-icon">✦</span><span data-en="HELP WHEN IT MATTERS" data-hi="ज़रूरत के समय सहायता">HELP WHEN IT MATTERS</span></div>
+          <h2 data-en="Emergency helplines. " data-hi="आपातकालीन हेल्पलाइन। ">Emergency <em>helplines.</em></h2>
+          <p data-en="Keep these important numbers handy. In an immediate emergency, call 112." data-hi="इन ज़रूरी नंबरों को संभालकर रखें। तत्काल आपातकाल में 112 पर कॉल करें।">Keep these important numbers handy. In an immediate emergency, call 112.</p></div>
+          <a class="emergency-call" href="tel:112"><span>☎</span><div><small data-en="ALL-IN-ONE EMERGENCY" data-hi="सभी आपातकाल के लिए">ALL-IN-ONE EMERGENCY</small><b>112</b></div><span>↗</span></a>
+        </div>
+        <div class="helpline-grid">
+          <a class="helpline-card" href="tel:102"><span class="help-icon red">✚</span><span><b data-en="Ambulance" data-hi="एम्बुलेंस">Ambulance</b><small data-en="National Ambulance Service" data-hi="राष्ट्रीय एम्बुलेंस सेवा">National Ambulance Service</small></span><strong>102 ↗</strong></a>
+          <a class="helpline-card" href="tel:101"><span class="help-icon orange">♨</span><span><b data-en="Fire & rescue" data-hi="अग्निशमन सेवा">Fire & rescue</b><small data-en="Fire emergency" data-hi="आग से जुड़ी आपात स्थिति">Fire emergency</small></span><strong>101 ↗</strong></a>
+          <a class="helpline-card" href="tel:100"><span class="help-icon blue">✧</span><span><b data-en="Police" data-hi="पुलिस">Police</b><small data-en="Police assistance" data-hi="पुलिस सहायता">Police assistance</small></span><strong>100 ↗</strong></a>
+          <a class="helpline-card" href="tel:1098"><span class="help-icon violet">♡</span><span><b data-en="Child helpline" data-hi="बाल हेल्पलाइन">Child helpline</b><small data-en="Support for children" data-hi="बच्चों के लिए सहायता">Support for children</small></span><strong>1098 ↗</strong></a>
+          <a class="helpline-card" href="tel:181"><span class="help-icon pink">✿</span><span><b data-en="Women helpline" data-hi="महिला हेल्पलाइन">Women helpline</b><small data-en="Women in distress" data-hi="संकट में महिलाओं के लिए">Women in distress</small></span><strong>181 ↗</strong></a>
+          <a class="helpline-card" href="tel:1930"><span class="help-icon green">⌁</span><span><b data-en="Cyber fraud" data-hi="साइबर धोखाधड़ी">Cyber fraud</b><small data-en="Report cyber financial fraud" data-hi="साइबर वित्तीय धोखाधड़ी की रिपोर्ट">Report cyber financial fraud</small></span><strong>1930 ↗</strong></a>
+        </div>
+        <p class="helpline-disclaimer" data-en="Helpline availability and routing may vary by location. For a pan-India emergency, use 112. Verify details with the National Portal of India." data-hi="हेल्पलाइन की उपलब्धता स्थान के अनुसार बदल सकती है। पूरे भारत में आपातकाल के लिए 112 का उपयोग करें। विवरण राष्ट्रीय पोर्टल पर जाँचें।">Helpline availability and routing may vary by location. For a pan-India emergency, use 112. Verify details with the National Portal of India.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-wrap">
+      <div class="footer-brand"><a class="brand brand-light" href="#home"><span class="brand-mark">P<span>W</span></span><span class="brand-name">PUB WEB <b>USER</b><small>PUBLIC SERVICE DIRECTORY</small></span></a><p data-en="Making public information easier to find, one useful link at a time." data-hi="सार्वजनिक जानकारी को एक-एक उपयोगी लिंक के ज़रिए आसान बनाना।">Making public information easier to find, one useful link at a time.</p><span class="independent-label">INDEPENDENT PUBLIC DIRECTORY</span></div>
+      <div class="footer-column"><h4 data-en="Explore" data-hi="देखें">Explore</h4><a href="#services" data-en="All services" data-hi="सभी सेवाएँ">All services</a><a href="#how" data-en="How it works" data-hi="कैसे काम करता है">How it works</a><a href="#emergency" data-en="Emergency numbers" data-hi="आपातकालीन नंबर">Emergency numbers</a></div>
+      <div class="footer-column bibliography"><h4 data-en="Bibliography / Sources" data-hi="स्रोत / संदर्भ">Bibliography / Sources</h4><a href="https://www.india.gov.in/" target="_blank" rel="noopener noreferrer">National Portal of India ↗</a><a href="https://services.india.gov.in/" target="_blank" rel="noopener noreferrer">National Government Services Portal ↗</a><a href="https://www.uidai.gov.in/" target="_blank" rel="noopener noreferrer">UIDAI — Aadhaar ↗</a><a href="https://www.passportindia.gov.in/" target="_blank" rel="noopener noreferrer">Passport Seva ↗</a><a href="https://www.india.gov.in/directory/helpline" target="_blank" rel="noopener noreferrer">Official Helpline Directory ↗</a></div>
+    </div>
+    <div class="footer-bottom section-wrap"><span>© <span id="year"></span> PUB WEB USER. <span data-en="Built for easier access." data-hi="आसान पहुँच के लिए बनाया गया।">Built for easier access.</span></span><span data-en="Not affiliated with the Government of India." data-hi="भारत सरकार से संबद्ध नहीं है।">Not affiliated with the Government of India.</span><a href="#home" class="back-top">BACK TO TOP ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
